@@ -1,0 +1,44 @@
+/* Log In */
+
+#login_reg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 1px;
+}
+#login_reg h4 {
+    cursor: pointer;
+    display: inline-block;
+}
+#login_reg h4:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+#login_reg h4:hover:after {
+	width: 100%;
+	background: black;
+}
+
+input {
+    margin: 20px 10px 0px 10px;
+    width: calc(100% - 20px);
+}
+
+#register {
+    display: none;
+}
+
+form p {
+    text-align: center;
+    padding-top: 20px;
+}

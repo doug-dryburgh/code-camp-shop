@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Code Camp Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A collaborative project to design a full stack ecommerce website.">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+
+<body>
+    <div id="pageContainer">
+
+        <!--NAV-->
+        <nav id="navBar">
+            <div id="logoMain">
+                <a href="#"> <img src="images/Logo/Logo3.png" alt="the company logo"> </a>
+            </div>
+            <div id="logoSml">
+                <a href="#"> <img src="images/Logo/Logo2.png" alt="the company logo"> </a>
+            </div>
+            <div id="linksMain">
+                <a href="#">
+                    <h4>Link1</h4>
+                </a>
+                <a href="#">
+                    <h4>Link2</h4>
+                </a>
+                <a href="#">
+                    <h4>Link3</h4>
+                </a>
+                <a href="#">
+                    <h4>Link4</h4>
+                </a>
+            </div>
+            <div id="linksSml" class="col-xs-5">
+                <h4>Menu</h4>
+            </div>
+        </nav>
+
+        <!--LOGIN-->
+        <div id="login_reg">
+            <div class="flexHorizontal">
+                    <h4 id="loginLink">Login</h4>
+                    <h4 id="regLink">Register</h4>
+            </div>
+            <div id="login">
+                <form>
+                    <input type="email" name="email" placeholder="Email Address">
+                    <input type="password" name="password" placeholder="Password">
+                    <input type="submit" value="Login">
+                    <a href="#"><p>Forgot Password?</p></a>
+                </form>
+            </div>
+
+            <div id="register">
+                <form>
+
+                    <input type="email" name="email" placeholder="Email Address">
+                    <input type="password" name="password" placeholder="Password">
+                    <input type="password" name="confirm password" placeholder="Confirm Password">
+                    <input type="text" name="name" placeholder="Full Name">
+                    <br><br>
+                    <p>[Captcha here]</p>
+                    <input type="submit" value="Register">
+
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--FOOTER-->
+    <div id="footer">
+        <p>&copy; 2017 All Rights Reserved</p>
+        <p><a href="#">About Project</a></p>
+        <p><a href="#">Contact</a></p>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
