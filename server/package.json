@@ -1,0 +1,16 @@
+{
+  "name": "ccwebshop",
+  "version": "1.0.0",
+  "description": "Code campers web shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Mirko Acimovic",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "node-mysql": "^0.4.2"
+  }
+}
