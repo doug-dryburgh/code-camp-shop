@@ -2,107 +2,115 @@ body {
     background-color: rgb(240, 240, 240);
 }
 
-#pageContainer {
+.container-fluid {
     min-height: calc(100vh - 50px);
-
 }
+
 
 /* NAV BAR */
 
-#navBar {
+.navBar {
     display: flex;
     top: 0;
+    min-width: 400px;
     height: 50px;
     background-color: rgb(255, 255, 255);
     border-bottom-style: solid;
     border-bottom-width: 1px;
 }
-
-#navBar div {
+.navBar div {
     width: 50%;
 }
 
-#linksMain {
-    display: flex;
+.linksMain {
+    display: none;
     justify-content: space-around;
     margin: auto;
 }
-
-#navBar a h4{
-    color: black;
-    text-decoration: none;
-    display: inline-block;
-	padding-top: 3px;
-}
-
-#navBar a h4:after {
-	content: '';
-	display: block;
-	margin: auto;
-	height: 3px;
-	width: 0px;
-	background: transparent;
-	transition: width .5s ease, background-color .5s ease;
-}
-#navBar a h4:hover:after {
-	width: 100%;
-	background: black;
-}
-
-#linksSml {
-    display: none;
+.linksSml {
+    display: flex;
     justify-content: flex-end;
     margin: auto;
 }
 
-#logoSml {
+.navBar a h4 {
+    color: black;
+    }
+
+
+.logoMain {
     display: none;
 }
 
-#navBar img {
+.navBar img {
     max-height: 100%;
     max-width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
-    #logoMain,
-    #linksMain {
-        display: none;
-    }
-    #logoSml,
-    #linksSml {
+@media only screen and (min-width: 768px) {
+    .logoMain,
+    .linksMain {
         display: flex;
+    }
+    .logoSml,
+    .linksSml {
+        display: none;
     }
 }
 
 
 /*FOOTER*/
 
-#footer {
+.footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: auto;
-min-width: 400px;
+    min-width: 400px;
     background-color: rgb(100, 100, 100);
     border-style: solid;
     border-width: 1px;
     height: 50px;
 }
 
-#footer p {
+.footer p {
     color: white;
     text-align: center;
-        width: 33%;
+    width: 33%;
 }
 
-#footer a {
+.footer a {
     color: white;
 }
 
+
 /* POSITION */
+
 .flexHorizontal {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+/*ANIMATION*/
+.underline {
+    cursor: pointer;
+text-decoration: none;
+    display: inline-block;
+    padding-top: 3px;
+}
+
+.underline:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.underline:hover:after {
+    width: 100%;
+    background: black;
 }
